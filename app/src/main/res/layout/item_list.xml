@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -41,22 +42,33 @@
         android:id="@+id/delBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/delete"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#FF0000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="16dp"/>
+        android:src="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="@id/editBTN"
+        app:layout_constraintEnd_toStartOf="@id/editBTN"
+        app:layout_constraintTop_toTopOf="@id/editBTN"
+        />
 
     <ImageButton
         android:id="@+id/editBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/edit"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#2c9c49"
-        app:layout_constraintEnd_toStartOf="@id/delBTN"
-        app:layout_constraintTop_toTopOf="@id/delBTN"
-        app:layout_constraintBottom_toBottomOf="@id/delBTN"
-        android:layout_marginEnd="8dp"/>
+        android:src="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="@id/doneButton"
+        app:layout_constraintEnd_toStartOf="@id/doneButton"
+        app:layout_constraintTop_toTopOf="@id/doneButton"/>
+
+    <ImageButton
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:src="@drawable/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
