@@ -38,8 +38,7 @@ class MainActivity : AppCompatActivity() {
         DB = daftarBelanjaDB.getDatabase(this)
 
         var _rvDaftar = findViewById<RecyclerView>(R.id.rvNotes)
-        var _fabAdd = findViewById<FloatingActionButton>(R.id.fabAdd)
-
+        var _fabAdd = findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.fabAdd)
 
         _rvDaftar.layoutManager = LinearLayoutManager(this)
         _rvDaftar.adapter = adapterDaftar

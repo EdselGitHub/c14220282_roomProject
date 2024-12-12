@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.C14220282_roomProject"
         tools:targetApi="31">
+        <activity android:name=".TambahDaftar"
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
