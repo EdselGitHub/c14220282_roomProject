@@ -65,7 +65,7 @@ class adapterDaftar (private val daftarBelanja : MutableList<daftarBelanja>):
         override fun getItemCount(): Int {
                 return daftarBelanja.size
         }
-
+//coba
 
 
         class ListViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {

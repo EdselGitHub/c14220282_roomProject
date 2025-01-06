@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         }
         adapterDaftar = adapterDaftar(arDaftar)
 
-
+//coba
         DB = daftarBelanjaDB.getDatabase(this)
 
         var _rvDaftar = findViewById<RecyclerView>(R.id.rvNotes)

@@ -16,7 +16,7 @@ import uts.c14220282.c14220282_roomproject.database.daftarBelanjaDB
 import uts.c14220282.c14220282_roomproject.helper.DateHelper.getCurrentDate
 
 class TambahDaftar : AppCompatActivity() {
-
+//    coba
     var DB = daftarBelanjaDB.getDatabase(this)
     var tanggal = getCurrentDate()
     var iID : Int = 0
